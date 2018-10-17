@@ -1,0 +1,15 @@
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MainWindow.g.cs
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\App.g.cs
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany_MarkupCompile.cache
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany_MarkupCompile.lref
+C:\Users\Asus\source\repos\MyCompany\MyCompany\bin\Debug\MyCompany.exe.config
+C:\Users\Asus\source\repos\MyCompany\MyCompany\bin\Debug\MyCompany.exe
+C:\Users\Asus\source\repos\MyCompany\MyCompany\bin\Debug\MyCompany.pdb
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MainWindow.baml
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.g.resources
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.Properties.Resources.resources
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.exe
+C:\Users\Asus\source\repos\MyCompany\MyCompany\obj\Debug\MyCompany.pdb

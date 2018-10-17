@@ -1,0 +1,9 @@
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\bin\Debug\Asteroid.exe.config
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\bin\Debug\Asteroid.exe
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\bin\Debug\Asteroid.pdb
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.csprojAssemblyReference.cache
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.Properties.Resources.resources
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.csproj.GenerateResource.cache
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.exe
+C:\Users\Asus\source\repos\MorozovaGame\Asteroid\obj\Debug\Asteroid.pdb

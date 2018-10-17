@@ -1,0 +1,32 @@
+﻿<Window x:Class="MyCompany.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyCompany"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name ="ListEmployee" HorizontalAlignment="Left" Height="90" Margin="38,50,0,0" VerticalAlignment="Top" Width="253">
+
+        </ListBox>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="38,31,0,0" TextWrapping="Wrap" Text="Сотрудники" VerticalAlignment="Top" Width="253">
+            Сотрудники
+        </TextBlock>
+        <ListBox x:Name ="ListDepartment" HorizontalAlignment="Left" Height="90" Margin="318,50,0,0" VerticalAlignment="Top" Width="253"/>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="318,31,0,0" TextWrapping="Wrap" Text="Департаменты" VerticalAlignment="Top" Width="253">Департаменты</TextBlock>
+        <Button Name ="btnAdd"  Content="Добавить сотрудника" HorizontalAlignment="Left" Height="21" Margin="38,216,0,0" VerticalAlignment="Top" Width="165" Click="btnAdd_Click"/>
+        <Button Name ="btnDel" Content="Удалить сотрудника" HorizontalAlignment="Left" Height="21" Margin="38,268,0,0" VerticalAlignment="Top" Width="165" Click="btnDel_Click"/>
+        <Button Name ="btnEdit" Content="Изменить департамент" HorizontalAlignment="Left" Height="21" Margin="38,242,0,0" VerticalAlignment="Top" Width="165" Click="btnEdit_Click"/>
+        <TextBox Name ="txName" HorizontalAlignment="Left" Height="24" Margin="146,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
+        <TextBlock HorizontalAlignment="Left" Margin="38,152,0,0" TextWrapping="Wrap" Text="ФИО сотрудника" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="38,184,0,0" TextWrapping="Wrap" Text="Департамент" VerticalAlignment="Top"/>
+        <ComboBox Name ="cbDepartment" HorizontalAlignment="Left" Margin="146,181,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button x:Name ="btnAddDep"  Content="Добавить департамент" HorizontalAlignment="Left" Height="21" Margin="318,216,0,0" VerticalAlignment="Top" Width="165" Click="btnAddDep_Click"/>
+        <Button x:Name ="btnDelDep" Content="Удалить департамент" HorizontalAlignment="Left" Height="21" Margin="318,242,0,0" VerticalAlignment="Top" Width="165" Click="btnDelDep_Click"/>
+        <TextBox x:Name ="txNameDep" HorizontalAlignment="Left" Height="24" Margin="426,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
+        <TextBlock HorizontalAlignment="Left" Margin="318,151,0,0" TextWrapping="Wrap" Text="Департамент" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
