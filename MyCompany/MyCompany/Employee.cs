@@ -3,54 +3,46 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace MyCompany
 {
-    class Employee
+    public class Employee: INotifyPropertyChanged
     {
+  
+        public event PropertyChangedEventHandler PropertyChanged;
 
-            public string name;
-            public string department;
-
-        public Employee (string name, string department)
+        string department, name;
+        public string DepartmentName
         {
-            this.name = name;
-            this.department = department;
+            get => this.department;
+            set
+            {
+                if (this.department != value)
+                {
+                    this.department = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.DepartmentName)));
+                }
+            }
+        }
+
+        public string EmployeeName
+        {
+            get => this.name;
+            set
+            {
+                if (this.name != value)
+                {
+                    this.name = value;
+                    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.EmployeeName)));
+                }
+            }
         }
 
         public override string ToString()
         {
-            return name + " (" + department + ")";
+            return name;
         }
-
-        public static List<Employee> pers = new List<Employee>();
-
-        //public static string Write()
-        //{
-        //    string text;
-        //    text = "";
-        //    foreach (Person p in pers)
-        //        text =  text + "Сотрудник " + p.name + " департамента '" + p.department + "'/n";
-        //    return text;
-        //}
-
-        //public static void AddPerson(string n, string d)
-        //{
-        //    Person p;
-        //    p.name = n;
-        //    p.department = d;
-        //    pers.Add(p);
-        //}
-
-        //public static void ChangeDepartment(Person p, string d)
-        //{
-        //    Person p_new;
-        //    p_new.name = p.name;
-        //    p_new.department = d;
-        //    pers.Remove(p);
-        //    pers.Add(p_new);
-        //}
-
 
 
     }
