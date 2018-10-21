@@ -8,14 +8,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox Name ="ListEmployee" HorizontalAlignment="Left" Height="90" Margin="38,50,0,0" VerticalAlignment="Top" Width="253">
-
-        </ListBox>
         <TextBlock HorizontalAlignment="Left" Height="18" Margin="38,31,0,0" TextWrapping="Wrap" Text="Сотрудники" VerticalAlignment="Top" Width="253">
-            Сотрудники
+
         </TextBlock>
-        <ListBox x:Name ="ListDepartment" HorizontalAlignment="Left" Height="90" Margin="318,50,0,0" VerticalAlignment="Top" Width="253"/>
-        <TextBlock HorizontalAlignment="Left" Height="18" Margin="318,31,0,0" TextWrapping="Wrap" Text="Департаменты" VerticalAlignment="Top" Width="253">Департаменты</TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="18" Margin="318,31,0,0" TextWrapping="Wrap" Text="Департаменты" VerticalAlignment="Top" Width="253"></TextBlock>
         <Button Name ="btnAdd"  Content="Добавить сотрудника" HorizontalAlignment="Left" Height="21" Margin="38,216,0,0" VerticalAlignment="Top" Width="165" Click="btnAdd_Click"/>
         <Button Name ="btnDel" Content="Удалить сотрудника" HorizontalAlignment="Left" Height="21" Margin="38,268,0,0" VerticalAlignment="Top" Width="165" Click="btnDel_Click"/>
         <Button Name ="btnEdit" Content="Изменить департамент" HorizontalAlignment="Left" Height="21" Margin="38,242,0,0" VerticalAlignment="Top" Width="165" Click="btnEdit_Click"/>
@@ -27,6 +23,28 @@
         <Button x:Name ="btnDelDep" Content="Удалить департамент" HorizontalAlignment="Left" Height="21" Margin="318,242,0,0" VerticalAlignment="Top" Width="165" Click="btnDelDep_Click"/>
         <TextBox x:Name ="txNameDep" HorizontalAlignment="Left" Height="24" Margin="426,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="145"/>
         <TextBlock HorizontalAlignment="Left" Margin="318,151,0,0" TextWrapping="Wrap" Text="Департамент" VerticalAlignment="Top"/>
+        <ListView Name ="ListEmployee" DisplayMemberPath="Name" HorizontalAlignment="Left" Height="92" Margin="41,54,0,0" VerticalAlignment="Top" Width="250">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Имя"/>
+                    <GridViewColumn Header="Департамент">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding DepartmentName}"/>
+                        </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                   
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListView Name="ListDepartment" HorizontalAlignment="Left" Height="92" Margin="318,53,0,0" VerticalAlignment="Top" Width="250">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
     </Grid>
 </Window>
